@@ -10,16 +10,6 @@
       "faultyHash": "",
       "isDirty": false
     },
-    "lib_import_same_repo_empl": {
-      "remote": "git@github.com:PierrePetrella/demo-git-for-dss-libraries.git",
-      "checkout": "",
-      "remotePath": "folder/deep_folder/",
-      "lastHash": "5587b33c3f7a10acae509d08e78247203d085104",
-      "conflictingFiles": [],
-      "resolvedFiles": [],
-      "faultyHash": "",
-      "isDirty": false
-    },
     "python/lib_import_same_repo_empl": {
       "remote": "git@github.com:PierrePetrella/demo-git-for-dss-libraries.git",
       "checkout": "refs/heads/main",
@@ -34,7 +24,6 @@
   "pythonPath": [
     "python",
     "python/lib_import_empl",
-    "lib_import_same_repo_empl",
     "python/lib_import_same_repo_empl"
   ],
   "rsrcPath": [
