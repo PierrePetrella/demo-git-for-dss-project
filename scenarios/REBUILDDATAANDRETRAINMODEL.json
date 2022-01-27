@@ -1,15 +1,15 @@
 {
-  "projectKey": "DKU_HAIKU",
+  "projectKey": "DEMO_OF_GIT_INTEGRATION_W_DSS_PRUNE_FLOW",
   "id": "REBUILDDATAANDRETRAINMODEL",
   "type": "step_based",
   "name": "Rebuild data and retrain model",
   "active": false,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1509549359455
+    "lastModifiedOn": 1643297377135
   },
   "checklists": {
     "checklists": []
@@ -39,7 +39,8 @@
             "itemId": "Orders",
             "partitionsSpec": ""
           }
-        ]
+        ],
+        "triggerWhenAllFire": false
       },
       "graceDelaySettings": {
         "delay": 120,
@@ -54,14 +55,16 @@
         "id": "build_0_true_d_Orders_filtered",
         "type": "build_flowitem",
         "name": "Filtered orders",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
         "params": {
-          "builds": [
-            {
-              "type": "DATASET",
-              "itemId": "Orders_filtered",
-              "partitionsSpec": ""
-            }
-          ],
+          "builds": [],
           "jobType": "RECURSIVE_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
@@ -71,6 +74,14 @@
         "id": "build_0_true_m_Clj0CRAY",
         "type": "build_flowitem",
         "name": "High revenue prediction",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
         "params": {
           "builds": [
             {
@@ -86,5 +97,6 @@
       }
     ]
   },
-  "automationLocal": false
+  "automationLocal": false,
+  "customFields": {}
 }
