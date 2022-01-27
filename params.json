@@ -220,7 +220,8 @@
       }
     }
   },
-  "name": "Haiku Starter",
+  "name": "Haiku Starter for Pierre",
+  "projectStatus": "Sandbox",
   "imgPattern": 8,
   "metrics": {
     "probes": [],
@@ -277,11 +278,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 137,
+    "versionNumber": 138,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1643289937848
+    "lastModifiedOn": 1643289940582
   },
   "creationTag": {
     "versionNumber": 0,
