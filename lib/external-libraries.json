@@ -9,11 +9,18 @@
       "resolvedFiles": [],
       "faultyHash": "",
       "isDirty": false
+    },
+    "lib_import_same_repo_example": {
+      "remote": "https://github.com/PierrePetrella/demo-git-for-dss-libraries",
+      "checkout": "refs/heads/main",
+      "remotePath": "folder/deep_folder/",
+      "isDirty": false
     }
   },
   "pythonPath": [
     "python",
-    "lib_import_example"
+    "lib_import_example",
+    "lib_import_same_repo_example"
   ],
   "rsrcPath": [
     "R"
