@@ -222,7 +222,6 @@
     }
   },
   "name": "DEMO of Git Integration w/ DSS",
-  "projectStatus": "Sandbox",
   "imgPattern": 8,
   "metrics": {
     "probes": [],
@@ -279,11 +278,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 142,
+    "versionNumber": 143,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1643291462786
+    "lastModifiedOn": 1643297360628
   },
   "creationTag": {
     "versionNumber": 0,
@@ -297,7 +296,8 @@
   "tags": [
     "tutorial",
     "downloads",
-    "section:General Topics"
+    "section:General Topics",
+    "duplicated"
   ],
   "customFields": {},
   "checklists": {
