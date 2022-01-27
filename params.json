@@ -221,7 +221,8 @@
       }
     }
   },
-  "name": "DEMO of Git Integration w/ DSS (add-recipe)",
+  "name": "DEMO of Git Integration w/ DSS",
+  "projectStatus": "Sandbox",
   "imgPattern": 8,
   "metrics": {
     "probes": [],
@@ -278,11 +279,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 147,
+    "versionNumber": 148,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1643298832957
+    "lastModifiedOn": 1643299106428
   },
   "creationTag": {
     "versionNumber": 0,
@@ -292,12 +293,11 @@
     "lastModifiedOn": 1498738782025
   },
   "description": "",
-  "shortDesc": "This project works with the data used in the [Basics 101-103 courses](https://academy.dataiku.com/page/core-concepts), and is a starting point for a number of learning materials.\n\nThe project *DEMO_OF_GIT_INTEGRATION_W_DSS_ADD_RECIPE* was copied from *DKU_HAIKU_STARTER_1* by Pierre on Jan 27th 2022",
+  "shortDesc": "This project works with the data used in the [Basics 101-103 courses](https://academy.dataiku.com/page/core-concepts), and is a starting point for a number of learning materials.\n",
   "tags": [
     "tutorial",
     "downloads",
-    "section:General Topics",
-    "duplicated"
+    "section:General Topics"
   ],
   "customFields": {},
   "checklists": {
