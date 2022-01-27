@@ -5,6 +5,21 @@
     "columnsSelection": {
       "mode": "ALL"
     },
+    "columnWidthsByName": {
+      "order_date": 120,
+      "pages_visited": 113,
+      "order_id": 106,
+      "customer_id": 100,
+      "tshirt_category": 155,
+      "tshirt_price": 105,
+      "tshirt_quantity": 128,
+      "gender": 100,
+      "birthdate": 113,
+      "user_agent": 300,
+      "ip_address": 120,
+      "campaign": 100,
+      "dataset": 100
+    },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
@@ -15,12 +30,17 @@
     "explorationSampling": {
       "selection": {
         "maxStoredBytes": 104857600,
+        "timeout": -1,
         "filter": {
           "distinct": false,
           "enabled": false
         },
         "partitionSelectionMethod": "ALL",
         "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
         "samplingMethod": "HEAD_SEQUENTIAL",
         "maxRecords": 10000,
         "targetRatio": 0.02,
@@ -31,6 +51,24 @@
       "_refreshTrigger": 0
     },
     "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
@@ -38,41 +76,7 @@
       "autoRefresh": true
     },
     "globalSearchQuery": "",
-    "explorationFilters": [
-      {
-        "column": "gender",
-        "type": "columnFilter",
-        "currentMode": "FACET",
-        "active": true,
-        "facet": {
-          "type": "facet",
-          "column": "gender",
-          "columnType": "ALPHANUM",
-          "currentMode": "ALPHANUM",
-          "sort": "count",
-          "selectedValues": {}
-        },
-        "alphanumFilter": {
-          "type": "alphanum",
-          "column": "gender",
-          "values": [],
-          "params": {
-            "mode": "full_string",
-            "normalization": "exact"
-          }
-        },
-        "validityFilter": {
-          "type": "validity",
-          "column": "gender",
-          "params": {
-            "type": "Gender",
-            "ok": true,
-            "nok": true,
-            "empty": true
-          }
-        }
-      }
-    ],
+    "explorationFilters": [],
     "previewMode": "ALL_ROWS"
   },
   "charts": []
