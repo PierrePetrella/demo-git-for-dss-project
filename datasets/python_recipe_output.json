@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1643306196685
+    "lastModifiedOn": 1643306226926
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,45 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "order_date_year",
+        "type": "double"
+      },
+      {
+        "name": "order_date_month",
+        "type": "double"
+      },
+      {
+        "name": "order_week_of_year",
+        "type": "double"
+      },
+      {
+        "name": "order_date_day",
+        "type": "double"
+      },
+      {
+        "name": "order_day_of_week",
+        "type": "double"
+      },
+      {
+        "name": "pages_visited",
+        "type": "double"
+      },
+      {
+        "name": "order_number",
+        "type": "double"
+      },
+      {
+        "name": "total",
+        "type": "double"
+      },
+      {
+        "name": "age",
+        "type": "double"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
