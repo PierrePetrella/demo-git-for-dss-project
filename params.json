@@ -220,7 +220,7 @@
       }
     }
   },
-  "name": "Haiku Starter for Pierre",
+  "name": "DEMO of Git Integration w/ DSS",
   "projectStatus": "Sandbox",
   "imgPattern": 8,
   "metrics": {
@@ -278,11 +278,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 138,
+    "versionNumber": 139,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1643289940582
+    "lastModifiedOn": 1643289985747
   },
   "creationTag": {
     "versionNumber": 0,
