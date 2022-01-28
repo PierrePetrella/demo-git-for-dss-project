@@ -221,7 +221,7 @@
       }
     }
   },
-  "name": "DEMO of Git Integration w/ DSS (demo_br)",
+  "name": "DEMO of Git Integration w/ DSS",
   "imgPattern": 8,
   "metrics": {
     "probes": [],
@@ -278,11 +278,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 151,
+    "versionNumber": 152,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1643374371187
+    "lastModifiedOn": 1643378400843
   },
   "creationTag": {
     "versionNumber": 0,
