@@ -6,8 +6,12 @@
     "deleted-recipe-editor": {
       "color": "#90a8b7"
     },
-    "within_dss:General Topics": {},
-    "downloads": {},
+    "within_dss:General Topics": {
+      "color": "#123883"
+    },
+    "downloads": {
+      "color": "#de1ea5"
+    },
     "imported": {
       "color": "#263238"
     },
@@ -20,7 +24,9 @@
     "tutorial": {
       "color": "#FFC425"
     },
-    "section:General Topics": {},
+    "section:General Topics": {
+      "color": "#de1ea5"
+    },
     "creator:admin": {
       "color": "#28aadd"
     }
