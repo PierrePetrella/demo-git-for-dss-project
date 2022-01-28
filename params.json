@@ -109,7 +109,7 @@
   "tutorialProject": true,
   "tutorialId": "DKU_HAIKU_STARTER",
   "settings": {
-    "flowAnchorSourcesAndSinks": true,
+    "flowAnchorSourcesAndSinks": false,
     "flowDisplaySettings": {
       "zonesGraphRenderingAlgorithm": "DOT_OLDRANK",
       "zonesGraphConnectZones": true
@@ -279,11 +279,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 148,
+    "versionNumber": 149,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1643299106428
+    "lastModifiedOn": 1643371569937
   },
   "creationTag": {
     "versionNumber": 0,
