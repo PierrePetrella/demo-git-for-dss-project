@@ -105,7 +105,7 @@
   "permissions": [
     {
       "group": "administrators",
-      "admin": false,
+      "admin": true,
       "readProjectContent": false,
       "writeProjectContent": true,
       "exportDatasetsData": true,
@@ -121,7 +121,7 @@
     },
     {
       "group": "data_team",
-      "admin": false,
+      "admin": true,
       "readProjectContent": false,
       "writeProjectContent": true,
       "exportDatasetsData": true,
@@ -311,11 +311,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 153,
+    "versionNumber": 154,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1643635333596
+    "lastModifiedOn": 1643635714198
   },
   "creationTag": {
     "versionNumber": 0,
