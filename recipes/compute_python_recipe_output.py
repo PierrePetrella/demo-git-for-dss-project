@@ -13,6 +13,9 @@ python_recipe_output_df = Orders_enriched_prepared_df.describe() # For this samp
 
 
 
+
+
+
 # Write recipe outputs
 python_recipe_output = dataiku.Dataset("python_recipe_output")
 python_recipe_output.write_with_schema(python_recipe_output_df)
