@@ -254,7 +254,7 @@
       }
     }
   },
-  "name": "DEMO of Git Integration w/ DSS (demo_branch)",
+  "name": "DEMO of Git Integration w/ DSS",
   "imgPattern": 8,
   "showInitials": false,
   "metrics": {
@@ -312,11 +312,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 158,
+    "versionNumber": 159,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1643973297639
+    "lastModifiedOn": 1643973664351
   },
   "creationTag": {
     "versionNumber": 0,
@@ -326,7 +326,7 @@
     "lastModifiedOn": 1498738782025
   },
   "description": "",
-  "shortDesc": "This Project is a DEMO project to showcase DSS\u0027s compatibility with git.\nThe project *DEMO_OF_GIT_INTEGRATION_W_DSS_DEMO_BRANCH* was copied from *DKU_HAIKU_STARTER_1* by Pierre on Feb 04th 2022",
+  "shortDesc": "This Project is a DEMO project to showcase DSS\u0027s compatibility with git.",
   "tags": [
     "tutorial",
     "downloads",
