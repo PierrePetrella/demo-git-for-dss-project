@@ -311,11 +311,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 154,
+    "versionNumber": 155,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1643635714198
+    "lastModifiedOn": 1643966588334
   },
   "creationTag": {
     "versionNumber": 0,
@@ -325,7 +325,7 @@
     "lastModifiedOn": 1498738782025
   },
   "description": "",
-  "shortDesc": "This project works with the data used in the [Basics 101-103 courses](https://academy.dataiku.com/page/core-concepts), and is a starting point for a number of learning materials.\n\nThe project *DEMO_OF_GIT_INTEGRATION_W_DSS_DEMO_BR* was copied from *DKU_HAIKU_STARTER_1* by Pierre on Jan 28th 2022",
+  "shortDesc": "This Project is a DEMO project to showcase DSS\u0027s compatibility with git.",
   "tags": [
     "tutorial",
     "downloads",
