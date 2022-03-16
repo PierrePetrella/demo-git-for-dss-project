@@ -20,12 +20,7 @@
   "dkuProperties": [],
   "inputs": {
     "main": {
-      "items": [
-        {
-          "ref": "Orders_enriched",
-          "deps": []
-        }
-      ]
+      "items": []
     }
   },
   "outputs": {
@@ -40,11 +35,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1643973371600
+    "lastModifiedOn": 1647423138267
   },
   "creationTag": {
     "versionNumber": 0,
