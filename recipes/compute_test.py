@@ -10,5 +10,5 @@ run_tests()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
-test = dataiku.Dataset("test")
-test.write_with_schema(pd.DataFrame())
+#test = dataiku.Dataset("test")
+#test.write_with_schema(pd.DataFrame())
