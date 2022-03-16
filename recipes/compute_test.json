@@ -25,21 +25,16 @@
   },
   "outputs": {
     "main": {
-      "items": [
-        {
-          "ref": "test",
-          "appendMode": false
-        }
-      ]
+      "items": []
     }
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1647423138267
+    "lastModifiedOn": 1647423175558
   },
   "creationTag": {
     "versionNumber": 0,
