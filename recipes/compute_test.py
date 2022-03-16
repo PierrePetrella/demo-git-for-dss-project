@@ -4,8 +4,8 @@ import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
 
-import 
 
+from test.run_tests import run_tests
 
 
 
