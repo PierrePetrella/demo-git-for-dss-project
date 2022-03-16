@@ -3,11 +3,10 @@
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
-import pytest
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-from test.run_tests import run_tests
-run_tests()
+from test import run_tests
+run_tests.run_tests()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
