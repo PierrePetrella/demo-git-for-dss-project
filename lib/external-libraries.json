@@ -24,7 +24,7 @@
       "remote": "git@github.com:PierrePetrella/demo-git-for-dss-libraries.git",
       "checkout": "refs/heads/main",
       "remotePath": "test",
-      "lastHash": "2eeb7455e2325cd25692b18397987cf57cc7fe52",
+      "lastHash": "49edf05b6503335a5c87416141ee465ebaab2133",
       "conflictingFiles": [],
       "resolvedFiles": [],
       "faultyHash": "",
