@@ -10,5 +10,5 @@ res = run_tests()
 print (res)
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
-test = dataiku.Dataset("test")
-test.write_with_schema()
+#test = dataiku.Dataset("test")
+#test.write_with_schema()
