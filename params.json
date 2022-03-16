@@ -184,14 +184,13 @@
     },
     "codeEnvs": {
       "python": {
-        "mode": "INHERIT",
+        "mode": "EXPLICIT_ENV",
         "preventOverride": false,
-        "envName": "Python36"
+        "envName": "pytest_37"
       },
       "r": {
         "mode": "INHERIT",
-        "preventOverride": false,
-        "envName": "dku_haiku"
+        "preventOverride": false
       },
       "julia": {
         "mode": "INHERIT",
@@ -312,11 +311,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 159,
+    "versionNumber": 160,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1643973664351
+    "lastModifiedOn": 1647423333328
   },
   "creationTag": {
     "versionNumber": 0,
