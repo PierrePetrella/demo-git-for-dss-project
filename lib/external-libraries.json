@@ -1,15 +1,5 @@
 {
   "gitReferences": {
-    "python/lib_import_empl": {
-      "remote": "https://github.com/PierrePetrella/demo-git-for-dss-libraries",
-      "checkout": "refs/heads/main",
-      "remotePath": "remote_library",
-      "lastHash": "90bd1303507cd34de442261137f917812bded941",
-      "conflictingFiles": [],
-      "resolvedFiles": [],
-      "faultyHash": "",
-      "isDirty": false
-    },
     "python/lib_import_same_repo_empl": {
       "remote": "git@github.com:PierrePetrella/demo-git-for-dss-libraries.git",
       "checkout": "refs/heads/main",
@@ -33,7 +23,6 @@
   },
   "pythonPath": [
     "python",
-    "python/lib_import_empl",
     "python/lib_import_same_repo_empl",
     "python/remote_library"
   ],
