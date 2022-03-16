@@ -7,7 +7,7 @@ from remote_library.test.run_tests import run_tests
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 res = run_tests()
-print ("test Res == "res)
+print ("test Res == ",res)
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
 #test = dataiku.Dataset("test")
