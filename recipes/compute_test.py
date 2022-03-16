@@ -6,9 +6,9 @@ from dataiku import pandasutils as pdu
 from remote_library.test.run_tests import run_tests
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-run_tests()
-
+res = run_tests()
+print (res)
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
 test = dataiku.Dataset("test")
-test.write_with_schema(pd.DataFrame())
+test.write_with_schema()
