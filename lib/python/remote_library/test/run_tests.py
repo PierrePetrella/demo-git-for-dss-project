@@ -1,4 +1,4 @@
 import pytest
 
 def run_tests():
-    return pytest.main(["-x", "mytestdir"])
+    return pytest.main(["-x", "."])
