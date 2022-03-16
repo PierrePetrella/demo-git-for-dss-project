@@ -5,7 +5,6 @@
 
 from remote_library import my_function
 
-
 def run_tests():
     return pytest.main(["-x", "."])
 
