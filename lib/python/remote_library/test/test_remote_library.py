@@ -6,6 +6,9 @@
 from remote_library import my_function
 
 
+def run_tests():
+    return pytest.main(["-x", "."])
+
 def test_dummy_function():
     dummy_results = my_function.do_something()
     assert dummy_results == 5
