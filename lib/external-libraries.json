@@ -29,5 +29,5 @@
   "rsrcPath": [
     "R"
   ],
-  "importLibrariesFromProjects": []
+  "importLibrariesFromProjects": ["PROJECTA"]
 }
