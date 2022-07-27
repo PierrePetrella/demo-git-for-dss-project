@@ -4,7 +4,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "Predict high_revenue (binary)",
   "contentType": "prediction/py_memory",
-  "activeVersion": "initial",
+  "activeVersion": "1658928488786",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -2864,11 +2864,11 @@
   "lastTrainIndex": 1,
   "lastTrainJobId": "",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1658928478694
+    "lastModifiedOn": 1658928501225
   },
   "creationTag": {
     "versionNumber": 0,
