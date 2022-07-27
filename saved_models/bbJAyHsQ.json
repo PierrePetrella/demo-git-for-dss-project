@@ -2861,14 +2861,14 @@
     "predictionDisplayCharts": [],
     "labels": []
   },
-  "lastTrainIndex": 1,
-  "lastTrainJobId": "",
+  "lastTrainIndex": 2,
+  "lastTrainJobId": "Build_Predict_high_revenue__binary__2022-07-27T13-28-03.158",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1658928501225
+    "lastModifiedOn": 1658928501299
   },
   "creationTag": {
     "versionNumber": 0,
