@@ -2857,14 +2857,14 @@
     "predictionDisplayCharts": [],
     "labels": []
   },
-  "lastTrainIndex": 1,
-  "lastTrainJobId": "",
+  "lastTrainIndex": 2,
+  "lastTrainJobId": "Build_Orders_by_customer_by_order_day_of_week_distinct__NP___python_recipe_output__NP___Test_results__NP___Prediction__LOGISTIC_REGRESSION__on_training__scoring__NP__2022-07-27T13-26-51.195",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1658928437863
+    "lastModifiedOn": 1658928437977
   },
   "creationTag": {
     "versionNumber": 0,
