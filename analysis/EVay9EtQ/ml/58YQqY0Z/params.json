@@ -1,26 +1,4 @@
 {
-  "guessPolicy": "DEFAULT",
-  "partitionedModel": {
-    "enabled": false,
-    "ssdSelection": {
-      "useMemTable": false,
-      "filter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "partitionSelectionMethod": "ALL",
-      "latestPartitionsN": 1,
-      "ordering": {
-        "enabled": false,
-        "rules": []
-      },
-      "samplingMethod": "FULL",
-      "maxRecords": -1,
-      "targetRatio": 0.02,
-      "withinFirstN": -1,
-      "maxReadUncompressedBytes": -1
-    }
-  },
   "weight": {
     "weightMethod": "CLASS_WEIGHT"
   },
@@ -609,6 +587,31 @@
         "input_features": [],
         "behavior": "DISABLED"
       }
+    }
+  },
+  "assertionsParams": {
+    "assertions": []
+  },
+  "guessPolicy": "DEFAULT",
+  "partitionedModel": {
+    "enabled": false,
+    "ssdSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "FULL",
+      "maxRecords": -1,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
     }
   },
   "modeling": {
@@ -2482,6 +2485,7 @@
       "trainOnAllData": true,
       "stepsPerEpoch": 100,
       "shuffleData": true,
+      "cachePreprocessedData": true,
       "perGPUMemoryFraction": 0.5,
       "gpuAllowGrowth": false,
       "advancedFitMode": false,
@@ -2489,6 +2493,708 @@
       "kerasInputs": [
         "main"
       ],
+      "useGPU": false,
+      "gpuList": [
+        0
+      ]
+    },
+    "trivial_identity_timeseries": {
+      "enabled": false
+    },
+    "seasonal_naive_timeseries": {
+      "season_length": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          1
+        ],
+        "range": {
+          "min": 1,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "enabled": false
+    },
+    "autoarima_timeseries": {
+      "m": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          1
+        ],
+        "range": {
+          "min": 1,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "information_criterion": {
+        "values": {
+          "aic": {
+            "enabled": true
+          },
+          "aicc": {
+            "enabled": false
+          },
+          "bic": {
+            "enabled": false
+          },
+          "hqic": {
+            "enabled": false
+          },
+          "oob": {
+            "enabled": false
+          }
+        }
+      },
+      "test": {
+        "values": {
+          "adf": {
+            "enabled": false
+          },
+          "kpss": {
+            "enabled": true
+          },
+          "pp": {
+            "enabled": false
+          }
+        }
+      },
+      "seasonal_test": {
+        "values": {
+          "ch": {
+            "enabled": false
+          },
+          "ocsb": {
+            "enabled": true
+          }
+        }
+      },
+      "method": {
+        "values": {
+          "basinhopping": {
+            "enabled": false
+          },
+          "bfgs": {
+            "enabled": false
+          },
+          "cg": {
+            "enabled": false
+          },
+          "lbfgs": {
+            "enabled": true
+          },
+          "ncg": {
+            "enabled": false
+          },
+          "newton": {
+            "enabled": false
+          },
+          "nm": {
+            "enabled": false
+          },
+          "powell": {
+            "enabled": false
+          }
+        }
+      },
+      "start_p": 2,
+      "max_p": 5,
+      "max_d": 2,
+      "start_q": 2,
+      "max_q": 5,
+      "start_P": 1,
+      "max_P": 2,
+      "max_D": 1,
+      "start_Q": 1,
+      "max_Q": 2,
+      "max_order": 5,
+      "stationary": false,
+      "enabled": false
+    },
+    "seasonal_loess_timeseries": {
+      "period": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 2
+        },
+        "values": [
+          2
+        ],
+        "range": {
+          "min": 2,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "seasonal": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 3
+        },
+        "values": [
+          7
+        ],
+        "range": {
+          "min": 3,
+          "max": 30,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "trend": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 3
+        },
+        "values": [
+          3
+        ],
+        "range": {
+          "min": 3,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "low_pass": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 3
+        },
+        "values": [
+          3
+        ],
+        "range": {
+          "min": 3,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "seasonal_deg": {
+        "values": {
+          "0": {
+            "enabled": false
+          },
+          "1": {
+            "enabled": true
+          }
+        }
+      },
+      "trend_deg": {
+        "values": {
+          "0": {
+            "enabled": false
+          },
+          "1": {
+            "enabled": true
+          }
+        }
+      },
+      "low_pass_deg": {
+        "values": {
+          "0": {
+            "enabled": false
+          },
+          "1": {
+            "enabled": true
+          }
+        }
+      },
+      "seasonal_jump": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          1
+        ],
+        "range": {
+          "min": 1,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "trend_jump": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          1
+        ],
+        "range": {
+          "min": 1,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "low_pass_jump": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          1
+        ],
+        "range": {
+          "min": 1,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "auto_trend": true,
+      "auto_low_pass": true,
+      "enabled": false
+    },
+    "gluonts_npts_timeseries": {
+      "context_length": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          1
+        ],
+        "range": {
+          "min": 1,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "kernel_type": {
+        "values": {
+          "exponential": {
+            "enabled": true
+          },
+          "uniform": {
+            "enabled": false
+          }
+        }
+      },
+      "exp_kernel_weights": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23
+        },
+        "values": [
+          1.0
+        ],
+        "range": {
+          "min": 0.1,
+          "max": 10.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "feature_scale": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23
+        },
+        "values": [
+          1000.0
+        ],
+        "range": {
+          "min": 0.1,
+          "max": 10000.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "full_context": true,
+      "use_seasonal_model": true,
+      "use_default_time_features": true,
+      "seed": 1337,
+      "enabled": false
+    },
+    "gluonts_simple_feed_forward_timeseries": {
+      "context_length": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          1
+        ],
+        "range": {
+          "min": 1,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "distr_output": {
+        "values": {
+          "GaussianOutput": {
+            "enabled": false
+          },
+          "NegativeBinomialOutput": {
+            "enabled": false
+          },
+          "StudentTOutput": {
+            "enabled": true
+          }
+        }
+      },
+      "batch_normalization": {
+        "values": {
+          "false": {
+            "enabled": true
+          },
+          "true": {
+            "enabled": false
+          }
+        }
+      },
+      "mean_scaling": {
+        "values": {
+          "false": {
+            "enabled": false
+          },
+          "true": {
+            "enabled": true
+          }
+        }
+      },
+      "num_hidden_dimensions": [
+        40,
+        40
+      ],
+      "full_context": true,
+      "num_parallel_samples": 100,
+      "batch_size": 32,
+      "epochs": 10,
+      "auto_num_batches_per_epoch": true,
+      "num_batches_per_epoch": 50,
+      "seed": 1337,
+      "enabled": false
+    },
+    "gluonts_deepar_timeseries": {
+      "context_length": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          1
+        ],
+        "range": {
+          "min": 1,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "num_layers": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          2
+        ],
+        "range": {
+          "min": 1,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "num_cells": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          40
+        ],
+        "range": {
+          "min": 10,
+          "max": 100,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "cell_type": {
+        "values": {
+          "gru": {
+            "enabled": false
+          },
+          "lstm": {
+            "enabled": true
+          }
+        }
+      },
+      "dropoutcell_type": {
+        "values": {
+          "RNNZoneoutCell": {
+            "enabled": false
+          },
+          "VariationalDropoutCell": {
+            "enabled": false
+          },
+          "VariationalZoneoutCell": {
+            "enabled": false
+          },
+          "ZoneoutCell": {
+            "enabled": true
+          }
+        }
+      },
+      "dropout_rate": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          0.1
+        ],
+        "range": {
+          "min": 0.05,
+          "max": 0.2,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "alpha": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "values": [
+          0.0
+        ],
+        "range": {
+          "min": 0.0,
+          "max": 0.2,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "beta": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "values": [
+          0.0
+        ],
+        "range": {
+          "min": 0.0,
+          "max": 0.2,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "distr_output": {
+        "values": {
+          "GaussianOutput": {
+            "enabled": false
+          },
+          "NegativeBinomialOutput": {
+            "enabled": false
+          },
+          "StudentTOutput": {
+            "enabled": true
+          }
+        }
+      },
+      "full_context": true,
+      "scaling": true,
+      "num_parallel_samples": 100,
+      "minimum_scale": 1.0E-10,
+      "batch_size": 32,
+      "epochs": 10,
+      "auto_num_batches_per_epoch": true,
+      "num_batches_per_epoch": 50,
+      "seed": 1337,
+      "enabled": false
+    },
+    "gluonts_transformer_timeseries": {
+      "context_length": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          1
+        ],
+        "range": {
+          "min": 1,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "model_dim": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          32
+        ],
+        "range": {
+          "min": 10,
+          "max": 100,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "inner_ff_dim_scale": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          4
+        ],
+        "range": {
+          "min": 1,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "num_heads": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          8
+        ],
+        "range": {
+          "min": 1,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "dropout_rate": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          0.1
+        ],
+        "range": {
+          "min": 0.05,
+          "max": 0.2,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "distr_output": {
+        "values": {
+          "GaussianOutput": {
+            "enabled": false
+          },
+          "NegativeBinomialOutput": {
+            "enabled": false
+          },
+          "StudentTOutput": {
+            "enabled": true
+          }
+        }
+      },
+      "full_context": true,
+      "num_parallel_samples": 100,
+      "batch_size": 32,
+      "epochs": 10,
+      "auto_num_batches_per_epoch": true,
+      "num_batches_per_epoch": 50,
+      "seed": 1337,
+      "enabled": false
+    },
+    "gluonts_mqcnn_timeseries": {
+      "context_length": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          1
+        ],
+        "range": {
+          "min": 1,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "full_context": true,
+      "seed": 1337,
+      "decoder_mlp_dim_seq": [
+        30
+      ],
+      "channels_seq": [
+        30,
+        30,
+        30
+      ],
+      "dilation_seq": [
+        1,
+        3,
+        5
+      ],
+      "kernel_size_seq": [
+        7,
+        3,
+        3
+      ],
+      "scaling": true,
+      "batch_size": 32,
+      "epochs": 10,
+      "auto_num_batches_per_epoch": true,
+      "num_batches_per_epoch": 50,
+      "enabled": false
+    },
+    "gluonts_gpu_params": {
       "useGPU": false,
       "gpuList": [
         0
@@ -2514,6 +3220,7 @@
       "nContainers": 4
     },
     "metrics": {
+      "customMetrics": [],
       "evaluationMetric": "ROC_AUC",
       "customEvaluationMetricGIB": true,
       "customEvaluationMetricNeedsProba": false,
@@ -2524,13 +3231,12 @@
         "fpGain": -0.3,
         "fnGain": 0.0
       },
-      "liftPoint": 0.4
+      "liftPoint": 0.4,
+      "unitaryTreatmentCost": 0.0,
+      "unitaryConversionBenefit": 0.0
     },
     "custom_mllib": [],
     "max_ensemble_nodes_serialized": 6000
-  },
-  "assertionsParams": {
-    "assertions": []
   },
   "predictionType": "BINARY_CLASSIFICATION",
   "targetVariable": "high_revenue",
@@ -2559,6 +3265,7 @@
     "ssdTrainingRatio": 0.8,
     "ssdSeed": 1337,
     "testOnLargerValues": true,
+    "streamAll": false,
     "kfold": false,
     "nFolds": 5,
     "instanceIdRefresher": 0,
@@ -2638,6 +3345,7 @@
     "analysisColumnData": {},
     "explorationSampling": {
       "selection": {
+        "maxRecordsForDisplay": -1,
         "maxStoredBytes": -1,
         "timeout": -1,
         "filter": {
