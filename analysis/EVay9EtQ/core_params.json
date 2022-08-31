@@ -74,6 +74,7 @@
     },
     "explorationSampling": {
       "selection": {
+        "maxRecordsForDisplay": -1,
         "maxStoredBytes": 104857600,
         "timeout": -1,
         "filter": {
