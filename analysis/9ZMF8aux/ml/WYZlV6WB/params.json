@@ -729,9 +729,9 @@
         "enabled": false,
         "rules": []
       },
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "maxRecords": 100000,
-      "targetRatio": 0.02,
+      "samplingMethod": "RANDOM_FIXED_RATIO",
+      "maxRecords": 10000,
+      "targetRatio": 0.2,
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
     },
