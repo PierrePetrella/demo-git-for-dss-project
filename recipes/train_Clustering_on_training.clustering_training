@@ -1,0 +1,861 @@
+{
+  "envSelection": {
+    "envMode": "USE_BUILTIN_MODE"
+  },
+  "diagnosticsSettings": {
+    "settings": [
+      {
+        "type": "ML_DIAGNOSTICS_DATASET_SANITY_CHECKS",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_MODELING_PARAMETERS",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_RUNTIME",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_TRAINING_OVERFIT",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_LEAKAGE_DETECTION",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_MODEL_CHECK",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_ML_ASSERTIONS",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_ABNORMAL_PREDICTIONS_DETECTION",
+        "enabled": true
+      }
+    ],
+    "enabled": true
+  },
+  "modeling": {
+    "max_iterations": 0,
+    "ts_kmeans_k": 0,
+    "coef0": 0.0,
+    "seed": 1337,
+    "n_jobs": 1,
+    "k": 5,
+    "isolation_forest": {
+      "max_samples": 0.5,
+      "max_features": 1.0,
+      "seed": 1337,
+      "n_samples": 256,
+      "max_depth": 15,
+      "k": 2,
+      "n_estimators": 100,
+      "bootstrap": true,
+      "max_anomalies": 100,
+      "enabled": false,
+      "contamination": 0.05
+    },
+    "epsilon": 0.0,
+    "min_sample_ratio": 0.0,
+    "metrics": {
+      "customEvaluationMetricGIB": true,
+      "evaluationMetric": "SILHOUETTE"
+    },
+    "gamma": 0.0,
+    "custom_has_k": false,
+    "algorithm": "KMEANS"
+  },
+  "generatingModelId": "A-GIT_INTEGRATION_DEMO-9ZMF8aux-WYZlV6WB-s1-pp1-m1",
+  "preprocessing": {
+    "reduce": {
+      "kept_variance": 0.0,
+      "enabled": false
+    },
+    "per_feature": {
+      "age_first_order": {
+        "rescaling": "AVGSTD",
+        "missing_impute_with": "MEAN",
+        "role": "INPUT",
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "binarize_constant_threshold": 0.0,
+        "type": "NUMERIC",
+        "binarize_threshold_mode": "MEDIAN",
+        "datetime_cyclical_periods": [],
+        "customProcessorWantsMatrix": false,
+        "quantile_bin_nb_bins": 4,
+        "generate_derivative": false,
+        "missing_handling": "IMPUTE",
+        "keep_regular": false,
+        "numerical_handling": "REGULAR",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning",
+          "userModified": false
+        },
+        "impute_constant_value": 0.0
+      },
+      "user_agent_osflavor": {
+        "nb_bins_hashing": 1048576,
+        "ordinal_default_mode": "HIGHEST",
+        "min_samples": 10,
+        "impact_method": "M_ESTIMATOR",
+        "missing_impute_with": "MODE",
+        "role": "INPUT",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "customHandlingCode": "",
+        "type": "CATEGORY",
+        "impact_kfold": true,
+        "missing_handling": "NONE",
+        "frequency_default_value": 0.0,
+        "impact_kfold_seed": 1337,
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Text",
+          "userModified": false
+        },
+        "ordinal_ascending": false,
+        "hash_whole_categories": true,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "dummy_drop": "NONE",
+        "frequency_normalized": true,
+        "ordinal_default_value": 0,
+        "sendToInput": "main",
+        "ordinal_order": "COUNT",
+        "impact_kfold_k": 5,
+        "customProcessorWantsMatrix": false,
+        "impact_m": 10,
+        "category_handling": "DUMMIFY",
+        "frequency_default_mode": "EXPLICIT"
+      },
+      "ip_address_geopoint": {
+        "nb_bins_hashing": 1048576,
+        "ordinal_default_mode": "HIGHEST",
+        "min_samples": 10,
+        "impact_method": "M_ESTIMATOR",
+        "missing_impute_with": "MODE",
+        "role": "REJECT",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "customHandlingCode": "",
+        "type": "CATEGORY",
+        "impact_kfold": true,
+        "missing_handling": "NONE",
+        "frequency_default_value": 0.0,
+        "impact_kfold_seed": 1337,
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "GeoPoint",
+          "userModified": false
+        },
+        "ordinal_ascending": false,
+        "hash_whole_categories": true,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "dummy_drop": "NONE",
+        "frequency_normalized": true,
+        "ordinal_default_value": 0,
+        "sendToInput": "main",
+        "ordinal_order": "COUNT",
+        "impact_kfold_k": 5,
+        "autoReason": "REJECT_CARDINALITY",
+        "customProcessorWantsMatrix": false,
+        "impact_m": 10,
+        "category_handling": "DUMMIFY",
+        "frequency_default_mode": "EXPLICIT"
+      },
+      "user_agent_osversion": {
+        "nb_bins_hashing": 1048576,
+        "ordinal_default_mode": "HIGHEST",
+        "min_samples": 10,
+        "impact_method": "M_ESTIMATOR",
+        "missing_impute_with": "MODE",
+        "role": "INPUT",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "customHandlingCode": "",
+        "type": "CATEGORY",
+        "impact_kfold": true,
+        "missing_handling": "NONE",
+        "frequency_default_value": 0.0,
+        "impact_kfold_seed": 1337,
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Text",
+          "userModified": false
+        },
+        "ordinal_ascending": false,
+        "hash_whole_categories": true,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "dummy_drop": "NONE",
+        "frequency_normalized": true,
+        "ordinal_default_value": 0,
+        "sendToInput": "main",
+        "ordinal_order": "COUNT",
+        "impact_kfold_k": 5,
+        "customProcessorWantsMatrix": false,
+        "impact_m": 10,
+        "category_handling": "DUMMIFY",
+        "frequency_default_mode": "EXPLICIT"
+      },
+      "gender": {
+        "nb_bins_hashing": 1048576,
+        "ordinal_default_mode": "HIGHEST",
+        "min_samples": 10,
+        "impact_method": "M_ESTIMATOR",
+        "missing_impute_with": "MODE",
+        "role": "INPUT",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "customHandlingCode": "",
+        "type": "CATEGORY",
+        "impact_kfold": true,
+        "missing_handling": "NONE",
+        "frequency_default_value": 0.0,
+        "impact_kfold_seed": 1337,
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Gender",
+          "userModified": false
+        },
+        "ordinal_ascending": false,
+        "hash_whole_categories": true,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "dummy_drop": "NONE",
+        "frequency_normalized": true,
+        "ordinal_default_value": 0,
+        "sendToInput": "main",
+        "ordinal_order": "COUNT",
+        "impact_kfold_k": 5,
+        "customProcessorWantsMatrix": false,
+        "impact_m": 10,
+        "category_handling": "DUMMIFY",
+        "frequency_default_mode": "EXPLICIT"
+      },
+      "pages_visited_avg": {
+        "rescaling": "AVGSTD",
+        "missing_impute_with": "MEAN",
+        "role": "INPUT",
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "binarize_constant_threshold": 0.0,
+        "type": "NUMERIC",
+        "binarize_threshold_mode": "MEDIAN",
+        "datetime_cyclical_periods": [],
+        "customProcessorWantsMatrix": false,
+        "quantile_bin_nb_bins": 4,
+        "generate_derivative": false,
+        "missing_handling": "IMPUTE",
+        "keep_regular": false,
+        "numerical_handling": "REGULAR",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning",
+          "userModified": false
+        },
+        "impute_constant_value": 0.0
+      },
+      "user_agent_brand": {
+        "nb_bins_hashing": 1048576,
+        "ordinal_default_mode": "HIGHEST",
+        "min_samples": 10,
+        "impact_method": "M_ESTIMATOR",
+        "missing_impute_with": "MODE",
+        "role": "INPUT",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "customHandlingCode": "",
+        "type": "CATEGORY",
+        "impact_kfold": true,
+        "missing_handling": "NONE",
+        "frequency_default_value": 0.0,
+        "impact_kfold_seed": 1337,
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Text",
+          "userModified": false
+        },
+        "ordinal_ascending": false,
+        "hash_whole_categories": true,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "dummy_drop": "NONE",
+        "frequency_normalized": true,
+        "ordinal_default_value": 0,
+        "sendToInput": "main",
+        "ordinal_order": "COUNT",
+        "impact_kfold_k": 5,
+        "customProcessorWantsMatrix": false,
+        "impact_m": 10,
+        "category_handling": "DUMMIFY",
+        "frequency_default_mode": "EXPLICIT"
+      },
+      "user_agent_os": {
+        "nb_bins_hashing": 1048576,
+        "ordinal_default_mode": "HIGHEST",
+        "min_samples": 10,
+        "impact_method": "M_ESTIMATOR",
+        "missing_impute_with": "MODE",
+        "role": "INPUT",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "customHandlingCode": "",
+        "type": "CATEGORY",
+        "impact_kfold": true,
+        "missing_handling": "NONE",
+        "frequency_default_value": 0.0,
+        "impact_kfold_seed": 1337,
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Text",
+          "userModified": false
+        },
+        "ordinal_ascending": false,
+        "hash_whole_categories": true,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "dummy_drop": "NONE",
+        "frequency_normalized": true,
+        "ordinal_default_value": 0,
+        "sendToInput": "main",
+        "ordinal_order": "COUNT",
+        "impact_kfold_k": 5,
+        "customProcessorWantsMatrix": false,
+        "impact_m": 10,
+        "category_handling": "DUMMIFY",
+        "frequency_default_mode": "EXPLICIT"
+      },
+      "ip_address_country": {
+        "nb_bins_hashing": 1048576,
+        "ordinal_default_mode": "HIGHEST",
+        "min_samples": 10,
+        "impact_method": "M_ESTIMATOR",
+        "missing_impute_with": "MODE",
+        "role": "REJECT",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "customHandlingCode": "",
+        "type": "CATEGORY",
+        "impact_kfold": true,
+        "missing_handling": "NONE",
+        "frequency_default_value": 0.0,
+        "impact_kfold_seed": 1337,
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "CountryMeaning",
+          "userModified": false
+        },
+        "ordinal_ascending": false,
+        "hash_whole_categories": true,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "dummy_drop": "NONE",
+        "frequency_normalized": true,
+        "ordinal_default_value": 0,
+        "sendToInput": "main",
+        "ordinal_order": "COUNT",
+        "impact_kfold_k": 5,
+        "autoReason": "REJECT_CARDINALITY",
+        "customProcessorWantsMatrix": false,
+        "impact_m": 10,
+        "category_handling": "DUMMIFY",
+        "frequency_default_mode": "EXPLICIT"
+      },
+      "order_date_month_distinct": {
+        "nb_bins_hashing": 1048576,
+        "ordinal_default_mode": "HIGHEST",
+        "min_samples": 10,
+        "impact_method": "M_ESTIMATOR",
+        "missing_impute_with": "MODE",
+        "role": "INPUT",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "customHandlingCode": "",
+        "type": "CATEGORY",
+        "impact_kfold": true,
+        "missing_handling": "NONE",
+        "frequency_default_value": 0.0,
+        "impact_kfold_seed": 1337,
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Text",
+          "userModified": false
+        },
+        "ordinal_ascending": false,
+        "hash_whole_categories": true,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "dummy_drop": "NONE",
+        "frequency_normalized": true,
+        "ordinal_default_value": 0,
+        "sendToInput": "main",
+        "ordinal_order": "COUNT",
+        "impact_kfold_k": 5,
+        "customProcessorWantsMatrix": false,
+        "impact_m": 10,
+        "category_handling": "DUMMIFY",
+        "frequency_default_mode": "EXPLICIT"
+      },
+      "count": {
+        "rescaling": "AVGSTD",
+        "missing_impute_with": "MEAN",
+        "role": "INPUT",
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "binarize_constant_threshold": 0.0,
+        "type": "NUMERIC",
+        "binarize_threshold_mode": "MEDIAN",
+        "datetime_cyclical_periods": [],
+        "customProcessorWantsMatrix": false,
+        "quantile_bin_nb_bins": 4,
+        "generate_derivative": false,
+        "missing_handling": "IMPUTE",
+        "keep_regular": false,
+        "numerical_handling": "REGULAR",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning",
+          "userModified": false
+        },
+        "impute_constant_value": 0.0
+      },
+      "total_sum": {
+        "rescaling": "AVGSTD",
+        "missing_impute_with": "MEAN",
+        "role": "INPUT",
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "binarize_constant_threshold": 0.0,
+        "type": "NUMERIC",
+        "binarize_threshold_mode": "MEDIAN",
+        "datetime_cyclical_periods": [],
+        "customProcessorWantsMatrix": false,
+        "quantile_bin_nb_bins": 4,
+        "generate_derivative": false,
+        "missing_handling": "IMPUTE",
+        "keep_regular": false,
+        "numerical_handling": "REGULAR",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning",
+          "userModified": false
+        },
+        "impute_constant_value": 0.0
+      },
+      "order_date_year_distinct": {
+        "rescaling": "AVGSTD",
+        "missing_impute_with": "MEAN",
+        "role": "INPUT",
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "binarize_constant_threshold": 0.0,
+        "type": "NUMERIC",
+        "binarize_threshold_mode": "MEDIAN",
+        "datetime_cyclical_periods": [],
+        "customProcessorWantsMatrix": false,
+        "quantile_bin_nb_bins": 4,
+        "generate_derivative": false,
+        "missing_handling": "IMPUTE",
+        "keep_regular": false,
+        "numerical_handling": "REGULAR",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning",
+          "userModified": false
+        },
+        "impute_constant_value": 0.0
+      },
+      "order_day_of_week_distinct": {
+        "rescaling": "AVGSTD",
+        "missing_impute_with": "MEAN",
+        "role": "INPUT",
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "binarize_constant_threshold": 0.0,
+        "type": "NUMERIC",
+        "binarize_threshold_mode": "MEDIAN",
+        "datetime_cyclical_periods": [],
+        "customProcessorWantsMatrix": false,
+        "quantile_bin_nb_bins": 4,
+        "generate_derivative": false,
+        "missing_handling": "IMPUTE",
+        "keep_regular": false,
+        "numerical_handling": "REGULAR",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning",
+          "userModified": false
+        },
+        "impute_constant_value": 0.0
+      },
+      "ip_address_city": {
+        "nb_bins_hashing": 1048576,
+        "ordinal_default_mode": "HIGHEST",
+        "min_samples": 10,
+        "impact_method": "M_ESTIMATOR",
+        "missing_impute_with": "MODE",
+        "role": "REJECT",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "customHandlingCode": "",
+        "type": "CATEGORY",
+        "impact_kfold": true,
+        "missing_handling": "NONE",
+        "frequency_default_value": 0.0,
+        "impact_kfold_seed": 1337,
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Text",
+          "userModified": false
+        },
+        "ordinal_ascending": false,
+        "hash_whole_categories": true,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "dummy_drop": "NONE",
+        "frequency_normalized": true,
+        "ordinal_default_value": 0,
+        "sendToInput": "main",
+        "ordinal_order": "COUNT",
+        "impact_kfold_k": 5,
+        "autoReason": "REJECT_CARDINALITY",
+        "customProcessorWantsMatrix": false,
+        "impact_m": 10,
+        "category_handling": "DUMMIFY",
+        "frequency_default_mode": "EXPLICIT"
+      },
+      "campaign": {
+        "nb_bins_hashing": 1048576,
+        "ordinal_default_mode": "HIGHEST",
+        "min_samples": 10,
+        "impact_method": "M_ESTIMATOR",
+        "missing_impute_with": "MODE",
+        "role": "INPUT",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "customHandlingCode": "",
+        "type": "CATEGORY",
+        "impact_kfold": true,
+        "missing_handling": "NONE",
+        "frequency_default_value": 0.0,
+        "impact_kfold_seed": 1337,
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Boolean",
+          "userModified": false
+        },
+        "ordinal_ascending": false,
+        "hash_whole_categories": true,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "dummy_drop": "NONE",
+        "frequency_normalized": true,
+        "ordinal_default_value": 0,
+        "sendToInput": "main",
+        "ordinal_order": "COUNT",
+        "impact_kfold_k": 5,
+        "customProcessorWantsMatrix": false,
+        "impact_m": 10,
+        "category_handling": "DUMMIFY",
+        "frequency_default_mode": "EXPLICIT"
+      },
+      "customer_id": {
+        "nb_bins_hashing": 1048576,
+        "ordinal_default_mode": "HIGHEST",
+        "min_samples": 10,
+        "impact_method": "M_ESTIMATOR",
+        "missing_impute_with": "MODE",
+        "role": "REJECT",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "customHandlingCode": "",
+        "type": "CATEGORY",
+        "impact_kfold": true,
+        "missing_handling": "NONE",
+        "frequency_default_value": 0.0,
+        "impact_kfold_seed": 1337,
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Text",
+          "userModified": false
+        },
+        "ordinal_ascending": false,
+        "hash_whole_categories": true,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "dummy_drop": "NONE",
+        "frequency_normalized": true,
+        "ordinal_default_value": 0,
+        "sendToInput": "main",
+        "ordinal_order": "COUNT",
+        "impact_kfold_k": 5,
+        "autoReason": "REJECT_IDENTIFIER",
+        "customProcessorWantsMatrix": false,
+        "impact_m": 10,
+        "category_handling": "DUMMIFY",
+        "frequency_default_mode": "EXPLICIT"
+      },
+      "dataset": {
+        "nb_bins_hashing": 1048576,
+        "ordinal_default_mode": "HIGHEST",
+        "min_samples": 10,
+        "impact_method": "M_ESTIMATOR",
+        "missing_impute_with": "MODE",
+        "role": "REJECT",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "customHandlingCode": "",
+        "type": "CATEGORY",
+        "impact_kfold": true,
+        "missing_handling": "NONE",
+        "frequency_default_value": 0.0,
+        "impact_kfold_seed": 1337,
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Text",
+          "userModified": false
+        },
+        "ordinal_ascending": false,
+        "hash_whole_categories": true,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "dummy_drop": "NONE",
+        "frequency_normalized": true,
+        "ordinal_default_value": 0,
+        "sendToInput": "main",
+        "ordinal_order": "COUNT",
+        "impact_kfold_k": 5,
+        "autoReason": "REJECT_ZERO_VARIANCE",
+        "customProcessorWantsMatrix": false,
+        "impact_m": 10,
+        "category_handling": "DUMMIFY",
+        "frequency_default_mode": "EXPLICIT"
+      }
+    },
+    "skipPreprocessing": false,
+    "feature_generation": {
+      "polynomial_combinations": {
+        "behavior": "DISABLED"
+      },
+      "manual_interactions": {
+        "interactions": []
+      },
+      "numericals_clustering": {
+        "all_features": false,
+        "input_features": [],
+        "k": 0,
+        "behavior": "DISABLED"
+      },
+      "categoricals_count_transformer": {
+        "all_features": false,
+        "input_features": [],
+        "behavior": "DISABLED"
+      },
+      "pairwise_linear": {
+        "behavior": "DISABLED"
+      }
+    },
+    "outliers": {
+      "min_n": 100,
+      "method": "CLUSTER",
+      "min_cum_ratio": 0.01
+    }
+  },
+  "modelVersionNamePrefix": "KMeans (k\u003d5) (s1)",
+  "expectedPreparationOutputSchema": {
+    "columns": [
+      {
+        "name": "customer_id",
+        "type": "string"
+      },
+      {
+        "name": "order_date_year_distinct",
+        "type": "bigint"
+      },
+      {
+        "name": "order_date_month_distinct",
+        "type": "string"
+      },
+      {
+        "name": "order_day_of_week_distinct",
+        "type": "double"
+      },
+      {
+        "name": "pages_visited_avg",
+        "type": "double"
+      },
+      {
+        "name": "total_sum",
+        "type": "double"
+      },
+      {
+        "name": "gender",
+        "type": "string"
+      },
+      {
+        "name": "age_first_order",
+        "type": "bigint"
+      },
+      {
+        "name": "user_agent_brand",
+        "type": "string"
+      },
+      {
+        "name": "user_agent_os",
+        "type": "string"
+      },
+      {
+        "name": "user_agent_osversion",
+        "type": "string"
+      },
+      {
+        "name": "user_agent_osflavor",
+        "type": "string"
+      },
+      {
+        "name": "ip_address_geopoint",
+        "type": "string"
+      },
+      {
+        "name": "ip_address_city",
+        "type": "string"
+      },
+      {
+        "name": "ip_address_country",
+        "type": "string"
+      },
+      {
+        "name": "campaign",
+        "type": "boolean"
+      },
+      {
+        "name": "dataset",
+        "type": "string"
+      },
+      {
+        "name": "count",
+        "type": "bigint"
+      }
+    ],
+    "userModified": false
+  },
+  "backendType": "PY_MEMORY",
+  "sampling": {
+    "datasetSmartName": "training",
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 100000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "instanceIdRefresher": 0,
+    "extractBeforePrepare": true
+  },
+  "script": {
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "explorationSampling": {
+      "_refreshTrigger": 0,
+      "selection": {
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "latestPartitionsN": 1,
+        "maxRecords": 10000,
+        "maxRecordsForDisplay": -1,
+        "ordering": {
+          "rules": [],
+          "enabled": false
+        },
+        "withinFirstN": -1,
+        "partitionSelectionMethod": "ALL",
+        "maxStoredBytes": 104857600,
+        "targetRatio": 0.02,
+        "maxReadUncompressedBytes": -1,
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "timeout": -1
+      },
+      "autoRefreshSample": false
+    },
+    "explorationFilters": [],
+    "exploreUIParams": {},
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "previewMode": "ALL_ROWS",
+    "vizSampling": {
+      "_refreshTrigger": 0,
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "latestPartitionsN": 1,
+        "maxRecords": -1,
+        "ordering": {
+          "rules": [],
+          "enabled": false
+        },
+        "withinFirstN": -1,
+        "partitionSelectionMethod": "ALL",
+        "targetRatio": 0.02,
+        "maxReadUncompressedBytes": -1,
+        "samplingMethod": "FULL"
+      },
+      "autoRefreshSample": false
+    },
+    "analysisColumnData": {
+      "order_date_month_distinct": {
+        "meaning": "Text"
+      },
+      "customer_id": {
+        "meaning": "Text"
+      },
+      "order_day_of_week_distinct": {
+        "meaning": "DoubleMeaning"
+      }
+    },
+    "columnWidthsByName": {},
+    "sorting": [],
+    "globalSearchQuery": "",
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    }
+  },
+  "sparkParams": {
+    "pipelineAllowMerge": true,
+    "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
+    "pipelineAllowStart": true,
+    "sparkExecutionEngine": "SPARK_SUBMIT",
+    "sparkConf": {
+      "inheritConf": "default",
+      "conf": []
+    },
+    "sparkRepartitionNonHDFS": 1,
+    "sparkUseGlobalMetastore": false
+  }
+}
