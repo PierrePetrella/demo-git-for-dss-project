@@ -1,6 +1,4 @@
 {
-  "projectKey": "DKU_HAIKU_STARTER_1",
-  "id": "TEST",
   "type": "custom_python",
   "name": "test",
   "active": false,

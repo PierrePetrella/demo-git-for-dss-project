@@ -1,6 +1,4 @@
 {
-  "projectKey": "DEMO_OF_GIT_INTEGRATION_W_DSS_PRUNE_FLOW",
-  "id": "REBUILDDATAANDRETRAINMODEL",
   "type": "step_based",
   "name": "Rebuild data and retrain model",
   "active": false,
