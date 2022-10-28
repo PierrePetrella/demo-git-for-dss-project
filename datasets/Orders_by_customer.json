@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1666946142249
+    "lastModifiedOn": 1666946189254
   },
   "creationTag": {
     "versionNumber": 0,
@@ -90,13 +90,8 @@
   "schema": {
     "columns": [
       {"name":"customer_id","type":"string","meaning":"Text"},
-      {"name":"order_date_year_max","type":"bigint"},
       {"name":"order_date_year_distinct","type":"bigint"},
-      {"name":"order_date_month_max","type":"bigint"},
       {"name":"order_date_month_distinct","type":"bigint","meaning":"Text"},
-      {"name":"order_week_of_year_max","type":"bigint"},
-      {"name":"order_week_of_year_distinct","type":"bigint"},
-      {"name":"order_date_day_distinct","type":"bigint"},
       {"name":"order_day_of_week_distinct","type":"bigint","meaning":"DoubleMeaning"},
       {"name":"pages_visited_avg","type":"double"},
       {"name":"total_sum","type":"double"},
