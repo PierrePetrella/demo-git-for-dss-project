@@ -1,6 +1,7 @@
 {
   "type": "Filesystem",
   "managed": true,
+  "featureGroup": false,
   "formatType": "csv",
   "checklists": {
     "checklists": []
@@ -59,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
-      "login": "alex"
+      "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1616702987079
+    "lastModifiedOn": 1666946142249
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,81 +89,29 @@
   },
   "schema": {
     "columns": [
-      {
-        "name": "customer_id",
-        "type": "string",
-        "meaning": "Text"
-      },
-      {
-        "name": "order_date_year_distinct",
-        "type": "bigint"
-      },
-      {
-        "name": "order_date_month_distinct",
-        "type": "bigint",
-        "meaning": "Text"
-      },
-      {
-        "name": "order_day_of_week_distinct",
-        "type": "bigint",
-        "meaning": "DoubleMeaning"
-      },
-      {
-        "name": "pages_visited_avg",
-        "type": "double"
-      },
-      {
-        "name": "total_sum",
-        "type": "double"
-      },
-      {
-        "name": "gender",
-        "type": "string"
-      },
-      {
-        "name": "age_first_order",
-        "type": "bigint"
-      },
-      {
-        "name": "user_agent_brand",
-        "type": "string"
-      },
-      {
-        "name": "user_agent_os",
-        "type": "string"
-      },
-      {
-        "name": "user_agent_osversion",
-        "type": "string"
-      },
-      {
-        "name": "user_agent_osflavor",
-        "type": "string"
-      },
-      {
-        "name": "ip_address_geopoint",
-        "type": "string"
-      },
-      {
-        "name": "ip_address_city",
-        "type": "string"
-      },
-      {
-        "name": "ip_address_country",
-        "type": "string"
-      },
-      {
-        "name": "campaign",
-        "type": "boolean"
-      },
-      {
-        "name": "dataset",
-        "type": "string"
-      },
-      {
-        "name": "count",
-        "type": "bigint"
-      }
+      {"name":"customer_id","type":"string","meaning":"Text"},
+      {"name":"order_date_year_max","type":"bigint"},
+      {"name":"order_date_year_distinct","type":"bigint"},
+      {"name":"order_date_month_max","type":"bigint"},
+      {"name":"order_date_month_distinct","type":"bigint","meaning":"Text"},
+      {"name":"order_week_of_year_max","type":"bigint"},
+      {"name":"order_week_of_year_distinct","type":"bigint"},
+      {"name":"order_date_day_distinct","type":"bigint"},
+      {"name":"order_day_of_week_distinct","type":"bigint","meaning":"DoubleMeaning"},
+      {"name":"pages_visited_avg","type":"double"},
+      {"name":"total_sum","type":"double"},
+      {"name":"gender","type":"string"},
+      {"name":"age_first_order","type":"bigint"},
+      {"name":"user_agent_brand","type":"string"},
+      {"name":"user_agent_os","type":"string"},
+      {"name":"user_agent_osversion","type":"string"},
+      {"name":"user_agent_osflavor","type":"string"},
+      {"name":"ip_address_geopoint","type":"string"},
+      {"name":"ip_address_city","type":"string"},
+      {"name":"ip_address_country","type":"string"},
+      {"name":"campaign","type":"boolean"},
+      {"name":"dataset","type":"string"},
+      {"name":"count","type":"bigint"}
     ],
     "userModified": true
   },
@@ -207,6 +156,10 @@
           },
           "partitionSelectionMethod": "ALL",
           "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
           "samplingMethod": "FULL",
           "maxRecords": -1,
           "targetRatio": 0.02,
@@ -219,6 +172,10 @@
       },
       "impala": {
         "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
       },
       "python": {}
     },
