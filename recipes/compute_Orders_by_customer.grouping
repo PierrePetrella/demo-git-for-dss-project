@@ -38,7 +38,7 @@
     },
     {
       "last": false,
-      "max": true,
+      "max": false,
       "count": false,
       "column": "order_date_year",
       "$idx": 1,
@@ -49,13 +49,12 @@
       "min": false,
       "countDistinct": true,
       "avg": false,
-      "$selected": false,
       "stddev": false,
       "first": false
     },
     {
       "last": false,
-      "max": true,
+      "max": false,
       "count": false,
       "column": "order_date_month",
       "$idx": 2,
@@ -66,13 +65,12 @@
       "min": false,
       "countDistinct": true,
       "avg": false,
-      "$selected": false,
       "stddev": false,
       "first": false
     },
     {
       "last": false,
-      "max": true,
+      "max": false,
       "count": false,
       "column": "order_week_of_year",
       "$idx": 3,
@@ -81,9 +79,8 @@
       "type": "bigint",
       "sum2": false,
       "min": false,
-      "countDistinct": true,
+      "countDistinct": false,
       "avg": false,
-      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -98,9 +95,8 @@
       "type": "bigint",
       "sum2": false,
       "min": false,
-      "countDistinct": true,
+      "countDistinct": false,
       "avg": false,
-      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -461,31 +457,11 @@
             "type": "string"
           },
           {
-            "name": "order_date_year_max",
-            "type": "bigint"
-          },
-          {
             "name": "order_date_year_distinct",
             "type": "bigint"
           },
           {
-            "name": "order_date_month_max",
-            "type": "bigint"
-          },
-          {
             "name": "order_date_month_distinct",
-            "type": "bigint"
-          },
-          {
-            "name": "order_week_of_year_max",
-            "type": "bigint"
-          },
-          {
-            "name": "order_week_of_year_distinct",
-            "type": "bigint"
-          },
-          {
-            "name": "order_date_day_distinct",
             "type": "bigint"
           },
           {
