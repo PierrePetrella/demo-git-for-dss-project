@@ -4,7 +4,7 @@
       "remote": "git@github.com:PierrePetrella/demo-git-for-dss-libraries.git",
       "checkout": "refs/heads/main",
       "remotePath": "folder/deep_folder",
-      "lastHash": "34b6ade51ff511565013e0045c06244cce907b90",
+      "lastHash": "b9f644665951ddfdaf8b7139151071181d457eb0",
       "conflictingFiles": [],
       "resolvedFiles": [],
       "faultyHash": "",
@@ -14,7 +14,7 @@
       "remote": "https://github.com/PierrePetrella/demo-git-for-dss-libraries",
       "checkout": "refs/heads/main",
       "remotePath": "remote_library",
-      "lastHash": "4159f31451b00fef575303f582fe8a324422f27c",
+      "lastHash": "b9f644665951ddfdaf8b7139151071181d457eb0",
       "conflictingFiles": [],
       "resolvedFiles": [],
       "faultyHash": "",
@@ -29,5 +29,7 @@
   "rsrcPath": [
     "R"
   ],
-  "importLibrariesFromProjects": ["PROJECTA"]
+  "importLibrariesFromProjects": [
+    "PROJECTA"
+  ]
 }
