@@ -10,11 +10,11 @@
     "lastModifiedOn": 1667578026949
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1667578026949
+    "lastModifiedOn": 1667578045893
   },
   "checklists": {
     "checklists": []
@@ -28,7 +28,29 @@
   "triggers": [],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "pull_git_refs_python/remote_library",
+        "type": "pull_git_refs",
+        "name": "Step #1",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "gitReferences": [
+            "python/remote_library"
+          ],
+          "updateAll": false,
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
