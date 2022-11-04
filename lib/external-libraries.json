@@ -4,7 +4,7 @@
       "remote": "git@github.com:PierrePetrella/demo-git-for-dss-libraries.git",
       "checkout": "refs/heads/main",
       "remotePath": "folder/deep_folder",
-      "lastHash": "b9f644665951ddfdaf8b7139151071181d457eb0",
+      "lastHash": "602a6480a9f0d31e98cbf964bd7953d518f61291",
       "conflictingFiles": [],
       "resolvedFiles": [],
       "faultyHash": "",
@@ -14,11 +14,11 @@
       "remote": "https://github.com/PierrePetrella/demo-git-for-dss-libraries",
       "checkout": "refs/heads/main",
       "remotePath": "remote_library",
-      "lastHash": "b9f644665951ddfdaf8b7139151071181d457eb0",
+      "lastHash": "602a6480a9f0d31e98cbf964bd7953d518f61291",
       "conflictingFiles": [],
       "resolvedFiles": [],
       "faultyHash": "",
-      "isDirty": true
+      "isDirty": false
     }
   },
   "pythonPath": [
