@@ -33,11 +33,11 @@
   "config": {},
   "name": "test_webapp",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1675180158367
+    "lastModifiedOn": 1675180188396
   },
   "creationTag": {
     "versionNumber": 0,

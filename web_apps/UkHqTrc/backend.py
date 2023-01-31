@@ -1,4 +1,4 @@
 import dash_html_components as html
 
 # build your Dash app
-app.layout = html.Div()
+app.layout = html.Div("new version")
