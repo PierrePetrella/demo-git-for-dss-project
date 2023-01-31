@@ -1,6 +1,7 @@
 {
   "type": "Filesystem",
   "managed": true,
+  "featureGroup": false,
   "formatType": "csv",
   "checklists": {
     "checklists": []
@@ -59,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1643298854751
+    "lastModifiedOn": 1675180054090
   },
   "creationTag": {
     "versionNumber": 0,
@@ -86,15 +87,13 @@
   },
   "schema": {
     "columns": [
-      {
-        "name": "order_day_of_week_distinct",
-        "type": "bigint",
-        "meaning": "DoubleMeaning"
-      },
-      {
-        "name": "count",
-        "type": "bigint"
-      }
+      {"name":"order_day_of_week_distinct","type":"bigint","meaning":"DoubleMeaning"},
+      {"name":"customer_id_min","type":"string"},
+      {"name":"customer_id_max","type":"string"},
+      {"name":"customer_id_distinct","type":"bigint"},
+      {"name":"order_date_year_distinct_min","type":"bigint"},
+      {"name":"order_date_month_distinct_sum","type":"bigint"},
+      {"name":"count","type":"bigint"}
     ],
     "userModified": true
   },
