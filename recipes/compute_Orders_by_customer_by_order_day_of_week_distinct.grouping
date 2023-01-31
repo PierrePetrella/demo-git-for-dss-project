@@ -22,7 +22,7 @@
   "values": [
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "customer_id",
       "count": false,
@@ -32,9 +32,10 @@
       "type": "string",
       "concatDistinct": false,
       "sum2": false,
-      "min": false,
-      "countDistinct": false,
+      "min": true,
+      "countDistinct": true,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -50,9 +51,10 @@
       "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
-      "min": false,
+      "min": true,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -63,7 +65,7 @@
       "column": "order_date_month_distinct",
       "count": false,
       "$idx": 2,
-      "sum": false,
+      "sum": true,
       "concat": false,
       "type": "bigint",
       "concatDistinct": false,
@@ -71,6 +73,7 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -372,6 +375,26 @@
           {
             "meaning": "DoubleMeaning",
             "name": "order_day_of_week_distinct",
+            "type": "bigint"
+          },
+          {
+            "name": "customer_id_min",
+            "type": "string"
+          },
+          {
+            "name": "customer_id_max",
+            "type": "string"
+          },
+          {
+            "name": "customer_id_distinct",
+            "type": "bigint"
+          },
+          {
+            "name": "order_date_year_distinct_min",
+            "type": "bigint"
+          },
+          {
+            "name": "order_date_month_distinct_sum",
             "type": "bigint"
           },
           {
