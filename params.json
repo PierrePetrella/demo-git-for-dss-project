@@ -89,6 +89,7 @@
       "exportGitRepository": false,
       "exportInsightsData": false,
       "useManualPluginsInfo": false,
+      "exportNotebooksWithOutputs": true,
       "includedDatasetsData": [],
       "includedSavedModels": [],
       "includedModelEvaluationStores": [],
@@ -108,7 +109,24 @@
   },
   "owner": "pierrepetrella",
   "permissionsVersion": "LEGACY",
-  "permissions": [],
+  "permissions": [
+    {
+      "user": "test",
+      "admin": false,
+      "readProjectContent": false,
+      "writeProjectContent": true,
+      "exportDatasetsData": true,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "shareToWorkspaces": true,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
+    }
+  ],
   "additionalDashboardUsers": {
     "users": []
   },
@@ -217,6 +235,7 @@
         },
         "scaling": {
           "initialReplicas": 1,
+          "progressDeadlineSeconds": 600,
           "hpa": false,
           "hpaTargetCPUPercent": 0,
           "hpaMetrics": [],
@@ -224,7 +243,9 @@
           "hpaMaxPods": 0,
           "hpaAnnotations": []
         },
-        "deploymentModifier": {}
+        "deploymentModifier": {
+          "config": {}
+        }
       }
     },
     "dkuProperties": []
@@ -287,11 +308,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 164,
+    "versionNumber": 165,
     "lastModifiedBy": {
       "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1675080859791
+    "lastModifiedOn": 1686560901741
   },
   "creationTag": {
     "versionNumber": 0,
