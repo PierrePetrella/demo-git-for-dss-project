@@ -11,6 +11,7 @@
       },
       "latestPartitionsN": 1,
       "maxRecords": 10000,
+      "maxRecordsForDisplay": -1,
       "ordering": {
         "rules": [],
         "enabled": false
@@ -26,6 +27,7 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
+  "columnUseScientificNotationByName": {},
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
     "autoRefresh": true
@@ -259,27 +261,30 @@
         "reverse": false
       },
       "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "MinMaxProcessor",
-      "params": {
-        "upperBound": "102.0",
-        "columns": [
-          "age"
-        ],
-        "clear": true,
-        "lowerBound": "14.00"
-      },
-      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
     "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL"
+    },
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
