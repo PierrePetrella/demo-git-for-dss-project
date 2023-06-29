@@ -1,6 +1,7 @@
 {
   "type": "Filesystem",
   "managed": true,
+  "featureGroup": false,
   "formatType": "csv",
   "checklists": {
     "checklists": []
@@ -59,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
-      "login": "alex"
+      "login": "pierrepetrella"
     },
-    "lastModifiedOn": 1616702187190
+    "lastModifiedOn": 1688040817539
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,59 +89,19 @@
   },
   "schema": {
     "columns": [
-      {
-        "name": "order_date",
-        "type": "string"
-      },
-      {
-        "name": "pages_visited",
-        "type": "string"
-      },
-      {
-        "name": "order_id",
-        "type": "string"
-      },
-      {
-        "name": "customer_id",
-        "type": "string",
-        "meaning": "Text"
-      },
-      {
-        "name": "tshirt_category",
-        "type": "string"
-      },
-      {
-        "name": "tshirt_price",
-        "type": "string"
-      },
-      {
-        "name": "tshirt_quantity",
-        "type": "string"
-      },
-      {
-        "name": "gender",
-        "type": "string"
-      },
-      {
-        "name": "birthdate",
-        "type": "string"
-      },
-      {
-        "name": "user_agent",
-        "type": "string"
-      },
-      {
-        "name": "ip_address",
-        "type": "string"
-      },
-      {
-        "name": "campaign",
-        "type": "string"
-      },
-      {
-        "name": "dataset",
-        "type": "string"
-      }
+      {"name":"order_date","type":"double"},
+      {"name":"pages_visited","type":"string"},
+      {"name":"order_id","type":"string"},
+      {"name":"customer_id","type":"string","meaning":"Text"},
+      {"name":"tshirt_category","type":"string"},
+      {"name":"tshirt_price","type":"string"},
+      {"name":"tshirt_quantity","type":"string"},
+      {"name":"gender","type":"string"},
+      {"name":"birthdate","type":"string"},
+      {"name":"user_agent","type":"string"},
+      {"name":"ip_address","type":"string"},
+      {"name":"campaign","type":"string"},
+      {"name":"dataset","type":"string"}
     ],
     "userModified": true
   },
@@ -185,6 +146,10 @@
           },
           "partitionSelectionMethod": "ALL",
           "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
           "samplingMethod": "FULL",
           "maxRecords": -1,
           "targetRatio": 0.02,
@@ -197,6 +162,10 @@
       },
       "impala": {
         "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
       },
       "python": {}
     },
